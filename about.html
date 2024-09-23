@@ -17,11 +17,19 @@
             background: linear-gradient(135deg, #003366, #0066cc);
             padding: 30px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         h1 {
             color: #ffffff;
             font-size: 2.8em;
             margin: 0;
+        }
+        .logo {
+            height: 100px;
+            width: auto;
+            margin-left: 20px;
         }
         nav {
             background-color: #ffffff;
@@ -53,17 +61,28 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding: 70px 30px;
+            padding: 50px 30px;
             background-color: #ffffff;
         }
         .about-text {
             flex: 1;
             min-width: 300px;
-            padding: 40px;
+            padding: 30px;
             background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin: 25px;
+            margin: 15px;
+        }
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            text-align: center;
+        }
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
         .team-grid {
             display: grid;
@@ -98,7 +117,7 @@
         }
         .values-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
             margin-top: 40px;
         }
@@ -106,6 +125,27 @@
             background-color: rgba(255, 255, 255, 0.1);
             padding: 30px;
             border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .value-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .value-item img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            transition: transform 0.3s ease;
+        }
+        .value-item:hover img {
+            transform: scale(1.1);
+        }
+        .value-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #ff8c00;
         }
         .cta-section {
             background: linear-gradient(135deg, #003366, #0066cc);
@@ -163,6 +203,7 @@
 <body>
     <header>
         <h1>About TradeMasters Plumbing</h1>
+        <img src="images/logo.png" alt="TradeMasters Plumbing Logo" class="logo">
     </header>
     <nav>
         <ul>
@@ -178,6 +219,14 @@
             <h2>Our Story</h2>
             <p>TradeMasters Plumbing has been serving the community for over 25 years. Founded in 1999 by master plumber John Smith, we've grown from a small family business to a team of expert plumbers dedicated to providing top-quality services.</p>
             <p>Our journey began with a simple vision: to offer reliable, honest, and skilled plumbing services to our neighbors. Over the years, we've expanded our expertise, embraced new technologies, and built a reputation for excellence in both residential and commercial plumbing.</p>
+        </div>
+        <div class="about-image">
+            <img src="images/19.jpg" alt="TradeMasters Plumbing Team">
+        </div>
+    </div>
+    <div class="about-container">
+        <div class="about-image">
+            <img src="images/20.jpg" alt="TradeMasters Plumbing Service">
         </div>
         <div class="about-text">
             <h2>Our Mission</h2>
@@ -198,18 +247,22 @@
         <h2>Our Core Values</h2>
         <div class="values-grid">
             <div class="value-item">
+                <img src="images/21.jpg" alt="Integrity Icon">
                 <h3>Integrity</h3>
                 <p>We conduct our business with honesty and transparency, always putting our customers' interests first.</p>
             </div>
             <div class="value-item">
+                <img src="images/22.jpg" alt="Excellence Icon">
                 <h3>Excellence</h3>
                 <p>We strive for the highest quality in every job we undertake, no matter how big or small.</p>
             </div>
             <div class="value-item">
+                <img src="images/23.jpg" alt="Reliability Icon">
                 <h3>Reliability</h3>
                 <p>Our customers can count on us to be there when they need us, delivering consistent and dependable service.</p>
             </div>
             <div class="value-item">
+                <img src="images/24.jpg" alt="Innovation Icon">
                 <h3>Innovation</h3>
                 <p>We continuously update our skills and adopt new technologies to provide the best solutions for our clients.</p>
             </div>
@@ -218,25 +271,25 @@
     <h2 style="text-align: center; margin-top: 70px; margin-bottom: 40px;">Meet Our Expert Team</h2>
     <div class="team-grid">
         <div class="team-member">
-            <img src="john-smith.jpg" alt="John Smith">
+            <img src="images/A.jpg" alt="John Smith">
             <h3>John Smith</h3>
             <p>Founder & Master Plumber</p>
             <p>With over 30 years of experience, John leads our team with expertise and passion.</p>
         </div>
         <div class="team-member">
-            <img src="sarah-johnson.jpg" alt="Sarah Johnson">
+            <img src="images/B.jpg" alt="Sarah Johnson">
             <h3>Sarah Johnson</h3>
             <p>Commercial Plumbing Specialist</p>
             <p>Sarah's innovative approach has revolutionized our commercial plumbing services.</p>
         </div>
         <div class="team-member">
-            <img src="mike-williams.jpg" alt="Mike Williams">
+            <img src="images/C.jpg" alt="Mike Williams">
             <h3>Mike Williams</h3>
             <p>Residential Plumbing Expert</p>
             <p>Mike's attention to detail ensures every home receives the best care possible.</p>
         </div>
         <div class="team-member">
-            <img src="emily-brown.jpg" alt="Emily Brown">
+            <img src="images/D.jpg" alt="Emily Brown">
             <h3>Emily Brown</h3>
             <p>Green Plumbing Specialist</p>
             <p>Emily leads our initiatives in eco-friendly plumbing solutions and water conservation.</p>
@@ -273,3 +326,4 @@
     </footer>
 </body>
 </html>
+

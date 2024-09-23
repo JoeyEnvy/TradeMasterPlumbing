@@ -17,11 +17,19 @@
             background: linear-gradient(135deg, #003366, #0066cc);
             padding: 30px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         h1 {
             color: #ffffff;
             font-size: 2.8em;
             margin: 0;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-left: 20px;
         }
         nav {
             background-color: #ffffff;
@@ -55,6 +63,7 @@
             gap: 40px;
             padding: 70px 30px;
             background-color: #ffffff;
+            justify-content: center;
         }
         .service-item {
             background-color: #ffffff;
@@ -68,15 +77,29 @@
             transform: translateY(-10px);
         }
         .service-item img {
-            max-width: 100%;
+            width: 100%;
             height: 200px;
             object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 25px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .service-item img:hover {
+            transform: scale(1.05);
         }
         .service-item h3 {
             color: #003366;
             margin-bottom: 20px;
+        }
+        .water-heater-section {
+            background-color: #ffffff;
+            padding: 70px 30px;
+            text-align: center;
+        }
+        .water-heater-content {
+            max-width: 800px;
+            margin: 0 auto;
         }
         .service-details {
             background: linear-gradient(135deg, #e6f3ff, #ffffff);
@@ -93,10 +116,25 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             padding: 40px;
             margin-bottom: 40px;
+            display: flex;
+            align-items: center;
         }
         .detail-item h3 {
             color: #ff8c00;
             margin-bottom: 20px;
+        }
+        .detail-item-content {
+            flex: 1;
+        }
+        .detail-item-image {
+            flex: 0 0 300px;
+            margin-left: 40px;
+        }
+        .detail-item-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
         }
         .cta-section {
             background: linear-gradient(135deg, #003366, #0066cc);
@@ -123,7 +161,7 @@
             text-align: center;
             padding: 50px 30px;
         }
-         .footer-content {
+        .footer-content {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
@@ -149,11 +187,27 @@
             color: #ffffff;
             text-decoration: none;
         }
+        @media (max-width: 768px) {
+            .service-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+            .service-item img {
+                height: 150px;
+            }
+            .detail-item {
+                flex-direction: column;
+            }
+            .detail-item-image {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Our Plumbing Services</h1>
+        <img src="images/logo.png" alt="TradeMasters Plumbing Solutions Logo" class="logo">
     </header>
     <nav>
         <ul>
@@ -166,75 +220,92 @@
     </nav>
     <div class="service-grid">
         <div class="service-item">
-            <img src="residential-plumbing.jpg" alt="Residential Plumbing">
+            <img src="images/9.jpg" alt="Residential Plumbing">
             <h3>Residential Plumbing</h3>
             <p>Comprehensive solutions for your home, from repairs to installations. We handle everything from leaky faucets to complete bathroom renovations.</p>
         </div>
         <div class="service-item">
-            <img src="commercial-plumbing.jpg" alt="Commercial Plumbing">
+            <img src="images/10.jpg" alt="Commercial Plumbing">
             <h3>Commercial Plumbing</h3>
             <p>Keeping businesses flowing smoothly with expert commercial services. We specialize in large-scale projects and ongoing maintenance contracts.</p>
         </div>
         <div class="service-item">
-            <img src="emergency-services.jpg" alt="Emergency Services">
+            <img src="images/11.jpg" alt="Emergency Services">
             <h3>Emergency Services</h3>
             <p>24/7 support for urgent plumbing issues, any time, any day. Our rapid response team is always ready to handle your plumbing emergencies.</p>
         </div>
         <div class="service-item">
-            <img src="leak-repair.jpg" alt="Leak Detection and Repair">
+            <img src="images/12.jpg" alt="Leak Detection and Repair">
             <h3>Leak Detection and Repair</h3>
             <p>Advanced techniques to locate and fix leaks quickly and efficiently, minimizing water damage and waste.</p>
         </div>
         <div class="service-item">
-            <img src="drain-cleaning.jpg" alt="Drain Cleaning">
+            <img src="images/13.jpg" alt="Drain Cleaning">
             <h3>Drain Cleaning</h3>
             <p>Professional drain cleaning services to keep your pipes flowing smoothly, preventing clogs and backups.</p>
         </div>
-        <div class="service-item">
-            <img src="water-heater.jpg" alt="Water Heater Services">
+    </div>
+    <div class="water-heater-section">
+        <div class="water-heater-content">
+            <img src="images/14.jpg" alt="Water Heater Services" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px; margin-bottom: 20px;">
             <h3>Water Heater Services</h3>
-            <p>Installation, repair, and maintenance for all types of water heaters, ensuring hot water when you need it.</p>
+            <p>Installation, repair, and maintenance for all types of water heaters, ensuring hot water when you need it. Our expert technicians are skilled in handling traditional tank water heaters, tankless systems, and the latest energy-efficient models.</p>
         </div>
     </div>
     <div class="service-details">
         <h2>Detailed Service Information</h2>
         <div class="detail-item">
-            <h3>Residential Plumbing</h3>
-            <p>Our residential plumbing services cover everything your home needs:</p>
-            <ul>
-                <li>Leak detection and repair</li>
-                <li>Faucet and fixture installation</li>
-                <li>Toilet repairs and replacements</li>
-                <li>Pipe insulation</li>
-                <li>Bathroom and kitchen remodeling</li>
-                <li>Sump pump installation and maintenance</li>
-                <li>Water filtration systems</li>
-            </ul>
+            <div class="detail-item-content">
+                <h3>Residential Plumbing</h3>
+                <p>Our residential plumbing services cover everything your home needs:</p>
+                <ul>
+                    <li>Leak detection and repair</li>
+                    <li>Faucet and fixture installation</li>
+                    <li>Toilet repairs and replacements</li>
+                    <li>Pipe insulation</li>
+                    <li>Bathroom and kitchen remodeling</li>
+                    <li>Sump pump installation and maintenance</li>
+                    <li>Water filtration systems</li>
+                </ul>
+            </div>
+            <div class="detail-item-image">
+                <img src="images/15.jpg" alt="Residential Plumbing">
+            </div>
         </div>
         <div class="detail-item">
-            <h3>Commercial Plumbing</h3>
-            <p>For businesses, we offer comprehensive plumbing solutions:</p>
-            <ul>
-                <li>Commercial pipe repair and replacement</li>
-                <li>Backflow prevention testing and installation</li>
-                <li>Grease trap cleaning and maintenance</li>
-                <li>Water line installation and repair</li>
-                <li>Commercial bathroom remodeling</li>
-                <li>Industrial plumbing services</li>
-                <li>Regular maintenance contracts</li>
-            </ul>
+            <div class="detail-item-content">
+                <h3>Commercial Plumbing</h3>
+                <p>For businesses, we offer comprehensive plumbing solutions:</p>
+                <ul>
+                    <li>Commercial pipe repair and replacement</li>
+                    <li>Backflow prevention testing and installation</li>
+                    <li>Grease trap cleaning and maintenance</li>
+                    <li>Water line installation and repair</li>
+                    <li>Commercial bathroom remodeling</li>
+                    <li>Industrial plumbing services</li>
+                    <li>Regular maintenance contracts</li>
+                </ul>
+            </div>
+            <div class="detail-item-image">
+                <img src="images/16.jpg" alt="Commercial Plumbing">
+            </div>
         </div>
         <div class="detail-item">
-            <h3>Emergency Services</h3>
-            <p>Our 24/7 emergency services include:</p>
-            <ul>
-                <li>Burst pipe repair</li>
-                <li>Emergency leak detection and repair</li>
-                <li>Sewer line backups</li>
-                <li>Water heater failures</li>
-                <li>Frozen pipe thawing</li>
-                <li>Emergency drain cleaning</li>
-            </ul>
+            <div class="detail-item-content">
+                <h3>Emergency Services</h3>
+                <p>Our 24/7 emergency services include:</p>
+                <ul>
+                    <li>Burst pipe repair</li>
+                    <li>Emergency leak detection and repair</li>
+                    <li>Sewer line backups</li>
+                    <li>Water heater failures</li>
+                    <li>Frozen pipe thawing</li>
+                    <li>Emergency drain cleaning</li>
+                </ul>
+            </div>
+            <div class="detail-item-image">
+                <img src="images/17.jpg" alt="Emergency Services">
+            </div>
         </div>
     </div>
     <div class="cta-section">

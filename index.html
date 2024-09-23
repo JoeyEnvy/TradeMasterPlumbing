@@ -15,18 +15,33 @@
         }
         header {
             background: linear-gradient(135deg, #003366, #0066cc);
-            padding: 30px;
-            text-align: center;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
         }
         h1 {
             color: #ffffff;
             font-size: 2.8em;
             margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .logo {
+            height: 120px;
+            width: auto;
+            margin-left: 20px;
         }
         nav {
             background-color: #ffffff;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav ul {
             list-style-type: none;
@@ -44,13 +59,14 @@
             font-weight: 600;
             padding: 15px 10px;
             display: inline-block;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
         nav ul li a:hover {
             color: #0066cc;
+            transform: translateY(-3px);
         }
         .hero {
-            background-image: url('hero-plumbing.jpg');
+            background-image: url('images/1.jpg');
             background-size: cover;
             background-position: center;
             height: 650px;
@@ -76,6 +92,7 @@
             text-align: center;
             position: relative;
             max-width: 600px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         .hero-text h2 {
             color: #003366;
@@ -95,10 +112,11 @@
             border-radius: 30px;
             font-weight: bold;
             display: inline-block;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .cta-button:hover {
             transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(255,140,0,0.3);
         }
         .services {
             display: flex;
@@ -115,10 +133,11 @@
             padding: 40px;
             width: 300px;
             text-align: center;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .service-card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         }
         .service-card img {
             width: 100%;
@@ -144,6 +163,10 @@
             margin: 25px;
             max-width: 400px;
             display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
         }
         .testimonial-card img {
             width: 100px;
@@ -151,12 +174,33 @@
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 20px;
+            border: 3px solid #0066cc;
         }
         .cta-section {
             background: linear-gradient(135deg, #003366, #0066cc);
             color: #ffffff;
             text-align: center;
             padding: 80px 30px;
+            position: relative;
+        }
+        .cta-section::before,
+        .cta-section::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-section::before {
+            left: 50px;
+            background-image: url('images/6.jpg');
+        }
+        .cta-section::after {
+            right: 50px;
+            background-image: url('images/7.jpg');
         }
         footer {
             background-color: #003366;
@@ -189,12 +233,19 @@
         .footer-section ul li a {
             color: #ffffff;
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer-section ul li a:hover {
+            color: #ff8c00;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>TradeMasters Plumbing</h1>
+        <div class="header-content">
+            <h1>TradeMasters Plumbing</h1>
+            <img src="images/logo.png" alt="TradeMasters Plumbing Logo" class="logo">
+        </div>
     </header>
     <nav>
         <ul>
@@ -214,17 +265,17 @@
     </div>
     <div class="services">
         <div class="service-card">
-            <img src="residential-plumbing.jpg" alt="Residential Plumbing">
+            <img src="images/2.jpg" alt="Residential Plumbing">
             <h3>Residential Plumbing</h3>
             <p>Comprehensive solutions for your home, from repairs to installations. We handle everything from leaky faucets to complete bathroom renovations.</p>
         </div>
         <div class="service-card">
-            <img src="commercial-plumbing.jpg" alt="Commercial Plumbing">
+            <img src="images/3.jpg" alt="Commercial Plumbing">
             <h3>Commercial Plumbing</h3>
             <p>Keeping businesses flowing smoothly with expert commercial services. We specialize in large-scale projects and ongoing maintenance contracts.</p>
         </div>
         <div class="service-card">
-            <img src="emergency-services.jpg" alt="Emergency Services">
+            <img src="images/4.jpg" alt="Emergency Services">
             <h3>Emergency Services</h3>
             <p>24/7 support for urgent plumbing issues, any time, any day. Our rapid response team is always ready to handle your plumbing emergencies.</p>
         </div>
@@ -232,12 +283,12 @@
     <div class="testimonials">
         <h2>What Our Customers Say</h2>
         <div class="testimonial-card">
-            <img src="customer1.jpg" alt="Jane Doe">
+            <img src="images/5.jpg" alt="Jane Doe">
             <p>"TradeMasters saved the day when we had a major leak. Their team was professional, quick, and thorough. Highly recommended!"</p>
             <h4>Jane Doe</h4>
         </div>
         <div class="testimonial-card">
-            <img src="customer2.jpg" alt="John Smith">
+            <img src="images/6.jpg" alt="John Smith">
             <p>"As a business owner, I appreciate TradeMasters' reliability and expertise. They've been maintaining our plumbing systems for years without a hitch."</p>
             <h4>John Smith</h4>
         </div>
