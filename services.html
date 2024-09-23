@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - TradeMasters Plumbing Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #003366, #0066cc);
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2.8em;
+            margin: 0;
+        }
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 15px 10px;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #0066cc;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 70px 30px;
+            background-color: #ffffff;
+        }
+        .service-item {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .service-item:hover {
+            transform: translateY(-10px);
+        }
+        .service-item img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 25px;
+        }
+        .service-item h3 {
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        .service-details {
+            background: linear-gradient(135deg, #e6f3ff, #ffffff);
+            padding: 70px 30px;
+        }
+        .service-details h2 {
+            color: #003366;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .detail-item {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+        .detail-item h3 {
+            color: #ff8c00;
+            margin-bottom: 20px;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #003366, #0066cc);
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 30px;
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #ff8c00, #ff6600);
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 30px;
+        }
+         .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-section {
+            margin: 30px;
+            text-align: left;
+        }
+        .footer-section h3 {
+            color: #ff8c00;
+            margin-bottom: 20px;
+        }
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 15px;
+        }
+        .footer-section ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Plumbing Services</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="service-grid">
+        <div class="service-item">
+            <img src="residential-plumbing.jpg" alt="Residential Plumbing">
+            <h3>Residential Plumbing</h3>
+            <p>Comprehensive solutions for your home, from repairs to installations. We handle everything from leaky faucets to complete bathroom renovations.</p>
+        </div>
+        <div class="service-item">
+            <img src="commercial-plumbing.jpg" alt="Commercial Plumbing">
+            <h3>Commercial Plumbing</h3>
+            <p>Keeping businesses flowing smoothly with expert commercial services. We specialize in large-scale projects and ongoing maintenance contracts.</p>
+        </div>
+        <div class="service-item">
+            <img src="emergency-services.jpg" alt="Emergency Services">
+            <h3>Emergency Services</h3>
+            <p>24/7 support for urgent plumbing issues, any time, any day. Our rapid response team is always ready to handle your plumbing emergencies.</p>
+        </div>
+        <div class="service-item">
+            <img src="leak-repair.jpg" alt="Leak Detection and Repair">
+            <h3>Leak Detection and Repair</h3>
+            <p>Advanced techniques to locate and fix leaks quickly and efficiently, minimizing water damage and waste.</p>
+        </div>
+        <div class="service-item">
+            <img src="drain-cleaning.jpg" alt="Drain Cleaning">
+            <h3>Drain Cleaning</h3>
+            <p>Professional drain cleaning services to keep your pipes flowing smoothly, preventing clogs and backups.</p>
+        </div>
+        <div class="service-item">
+            <img src="water-heater.jpg" alt="Water Heater Services">
+            <h3>Water Heater Services</h3>
+            <p>Installation, repair, and maintenance for all types of water heaters, ensuring hot water when you need it.</p>
+        </div>
+    </div>
+    <div class="service-details">
+        <h2>Detailed Service Information</h2>
+        <div class="detail-item">
+            <h3>Residential Plumbing</h3>
+            <p>Our residential plumbing services cover everything your home needs:</p>
+            <ul>
+                <li>Leak detection and repair</li>
+                <li>Faucet and fixture installation</li>
+                <li>Toilet repairs and replacements</li>
+                <li>Pipe insulation</li>
+                <li>Bathroom and kitchen remodeling</li>
+                <li>Sump pump installation and maintenance</li>
+                <li>Water filtration systems</li>
+            </ul>
+        </div>
+        <div class="detail-item">
+            <h3>Commercial Plumbing</h3>
+            <p>For businesses, we offer comprehensive plumbing solutions:</p>
+            <ul>
+                <li>Commercial pipe repair and replacement</li>
+                <li>Backflow prevention testing and installation</li>
+                <li>Grease trap cleaning and maintenance</li>
+                <li>Water line installation and repair</li>
+                <li>Commercial bathroom remodeling</li>
+                <li>Industrial plumbing services</li>
+                <li>Regular maintenance contracts</li>
+            </ul>
+        </div>
+        <div class="detail-item">
+            <h3>Emergency Services</h3>
+            <p>Our 24/7 emergency services include:</p>
+            <ul>
+                <li>Burst pipe repair</li>
+                <li>Emergency leak detection and repair</li>
+                <li>Sewer line backups</li>
+                <li>Water heater failures</li>
+                <li>Frozen pipe thawing</li>
+                <li>Emergency drain cleaning</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cta-section">
+        <h2>Ready to Schedule a Service?</h2>
+        <p>Our expert plumbers are just a call away. Contact us for prompt, professional service.</p>
+        <a href="contact.html" class="cta-button">Book Now</a>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 Plumber Street, Watertown, CA 90210</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@trademastersplumbing.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Facebook | Twitter | Instagram | LinkedIn</p>
+            </div>
+        </div>
+        <p>&copy; 2024 TradeMasters Plumbing. All rights reserved.</p>
+    </footer>
+</body>
+</html>

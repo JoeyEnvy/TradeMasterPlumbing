@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TradeMasters Plumbing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #003366, #0066cc);
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2.8em;
+            margin: 0;
+        }
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 15px 10px;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #0066cc;
+        }
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 70px 30px;
+            background-color: #ffffff;
+        }
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 25px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding: 70px 30px;
+            background: linear-gradient(135deg, #e6f3ff, #ffffff);
+        }
+        .team-member {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+        .team-member img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 25px;
+        }
+        .values-section {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 70px 30px;
+            text-align: center;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .value-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #003366, #0066cc);
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 30px;
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #ff8c00, #ff6600);
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 30px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-section {
+            margin: 30px;
+            text-align: left;
+        }
+        .footer-section h3 {
+            color: #ff8c00;
+            margin-bottom: 20px;
+        }
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 15px;
+        }
+        .footer-section ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About TradeMasters Plumbing</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="about-container">
+        <div class="about-text">
+            <h2>Our Story</h2>
+            <p>TradeMasters Plumbing has been serving the community for over 25 years. Founded in 1999 by master plumber John Smith, we've grown from a small family business to a team of expert plumbers dedicated to providing top-quality services.</p>
+            <p>Our journey began with a simple vision: to offer reliable, honest, and skilled plumbing services to our neighbors. Over the years, we've expanded our expertise, embraced new technologies, and built a reputation for excellence in both residential and commercial plumbing.</p>
+        </div>
+        <div class="about-text">
+            <h2>Our Mission</h2>
+            <p>At TradeMasters Plumbing, our mission is to deliver exceptional plumbing services that ensure the comfort, safety, and satisfaction of our customers, while maintaining the highest standards of professionalism and integrity.</p>
+            <h2>Why Choose TradeMasters?</h2>
+            <ul>
+                <li>Over 25 years of experience in the industry</li>
+                <li>Licensed and insured professional plumbers</li>
+                <li>24/7 emergency services</li>
+                <li>Upfront pricing with no hidden fees</li>
+                <li>Eco-friendly plumbing solutions</li>
+                <li>State-of-the-art equipment and techniques</li>
+                <li>Commitment to customer satisfaction</li>
+            </ul>
+        </div>
+    </div>
+    <div class="values-section">
+        <h2>Our Core Values</h2>
+        <div class="values-grid">
+            <div class="value-item">
+                <h3>Integrity</h3>
+                <p>We conduct our business with honesty and transparency, always putting our customers' interests first.</p>
+            </div>
+            <div class="value-item">
+                <h3>Excellence</h3>
+                <p>We strive for the highest quality in every job we undertake, no matter how big or small.</p>
+            </div>
+            <div class="value-item">
+                <h3>Reliability</h3>
+                <p>Our customers can count on us to be there when they need us, delivering consistent and dependable service.</p>
+            </div>
+            <div class="value-item">
+                <h3>Innovation</h3>
+                <p>We continuously update our skills and adopt new technologies to provide the best solutions for our clients.</p>
+            </div>
+        </div>
+    </div>
+    <h2 style="text-align: center; margin-top: 70px; margin-bottom: 40px;">Meet Our Expert Team</h2>
+    <div class="team-grid">
+        <div class="team-member">
+            <img src="john-smith.jpg" alt="John Smith">
+            <h3>John Smith</h3>
+            <p>Founder & Master Plumber</p>
+            <p>With over 30 years of experience, John leads our team with expertise and passion.</p>
+        </div>
+        <div class="team-member">
+            <img src="sarah-johnson.jpg" alt="Sarah Johnson">
+            <h3>Sarah Johnson</h3>
+            <p>Commercial Plumbing Specialist</p>
+            <p>Sarah's innovative approach has revolutionized our commercial plumbing services.</p>
+        </div>
+        <div class="team-member">
+            <img src="mike-williams.jpg" alt="Mike Williams">
+            <h3>Mike Williams</h3>
+            <p>Residential Plumbing Expert</p>
+            <p>Mike's attention to detail ensures every home receives the best care possible.</p>
+        </div>
+        <div class="team-member">
+            <img src="emily-brown.jpg" alt="Emily Brown">
+            <h3>Emily Brown</h3>
+            <p>Green Plumbing Specialist</p>
+            <p>Emily leads our initiatives in eco-friendly plumbing solutions and water conservation.</p>
+        </div>
+    </div>
+    <div class="cta-section">
+        <h2>Experience the TradeMasters Difference</h2>
+        <p>Let our expert team solve your plumbing problems with skill, integrity, and dedication.</p>
+        <a href="contact.html" class="cta-button">Contact Us Today</a>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 Plumber Street, Watertown, CA 90210</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@trademastersplumbing.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Facebook | Twitter | Instagram | LinkedIn</p>
+            </div>
+        </div>
+        <p>&copy; 2024 TradeMasters Plumbing. All rights reserved.</p>
+    </footer>
+</body>
+</html>

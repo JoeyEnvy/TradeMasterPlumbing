@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeMasters Plumbing | Expert Plumbing Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #003366, #0066cc);
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2.8em;
+            margin: 0;
+        }
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 15px 10px;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #0066cc;
+        }
+        .hero {
+            background-image: url('hero-plumbing.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 50px;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+        }
+        .hero-text {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            max-width: 600px;
+        }
+        .hero-text h2 {
+            color: #003366;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero-text p {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 25px;
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #ff8c00, #ff6600);
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 70px 30px;
+            background-color: #ffffff;
+        }
+        .service-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 25px;
+            padding: 40px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 25px;
+        }
+        .service-card h3 {
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        .testimonials {
+            background: linear-gradient(135deg, #e6f3ff, #ffffff);
+            padding: 70px 30px;
+            text-align: center;
+        }
+        .testimonial-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin: 25px;
+            max-width: 400px;
+            display: inline-block;
+        }
+        .testimonial-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #003366, #0066cc);
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 30px;
+        }
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 30px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-section {
+            margin: 30px;
+            text-align: left;
+        }
+        .footer-section h3 {
+            color: #ff8c00;
+            margin-bottom: 20px;
+        }
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 15px;
+        }
+        .footer-section ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TradeMasters Plumbing</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <div class="hero-text">
+            <h2>Expert Plumbing Solutions for Every Need</h2>
+            <p>Your trusted partner for residential and commercial plumbing services. Available 24/7 for emergencies.</p>
+            <a href="contact.html" class="cta-button">Get a Free Quote</a>
+        </div>
+    </div>
+    <div class="services">
+        <div class="service-card">
+            <img src="residential-plumbing.jpg" alt="Residential Plumbing">
+            <h3>Residential Plumbing</h3>
+            <p>Comprehensive solutions for your home, from repairs to installations. We handle everything from leaky faucets to complete bathroom renovations.</p>
+        </div>
+        <div class="service-card">
+            <img src="commercial-plumbing.jpg" alt="Commercial Plumbing">
+            <h3>Commercial Plumbing</h3>
+            <p>Keeping businesses flowing smoothly with expert commercial services. We specialize in large-scale projects and ongoing maintenance contracts.</p>
+        </div>
+        <div class="service-card">
+            <img src="emergency-services.jpg" alt="Emergency Services">
+            <h3>Emergency Services</h3>
+            <p>24/7 support for urgent plumbing issues, any time, any day. Our rapid response team is always ready to handle your plumbing emergencies.</p>
+        </div>
+    </div>
+    <div class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-card">
+            <img src="customer1.jpg" alt="Jane Doe">
+            <p>"TradeMasters saved the day when we had a major leak. Their team was professional, quick, and thorough. Highly recommended!"</p>
+            <h4>Jane Doe</h4>
+        </div>
+        <div class="testimonial-card">
+            <img src="customer2.jpg" alt="John Smith">
+            <p>"As a business owner, I appreciate TradeMasters' reliability and expertise. They've been maintaining our plumbing systems for years without a hitch."</p>
+            <h4>John Smith</h4>
+        </div>
+    </div>
+    <div class="cta-section">
+        <h2>Need a Plumber?</h2>
+        <p>We're available 24/7 for all your plumbing needs. Don't let plumbing issues disrupt your life or business.</p>
+        <a href="contact.html" class="cta-button">Contact Us Now</a>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 Plumber Street, Watertown, CA 90210</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@trademastersplumbing.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Facebook | Twitter | Instagram | LinkedIn</p>
+            </div>
+        </div>
+        <p>&copy; 2024 TradeMasters Plumbing. All rights reserved.</p>
+    </footer>
+</body>
+</html>
