@@ -1,46 +1,376 @@
- <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>QuantumLeap AI - Revolutionizing the Future of Artificial Intelligence</title> <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&family=Exo+2:wght@400;700&display=swap" rel="stylesheet"> <style> :root { --primary-color: #00ffff; --secondary-color: #ff00ff; --background-color: #111; --text-color: #fff; --navbar-width: 250px; } * { box-sizing: border-box; margin: 0; padding: 0; } body { font-family: 'Roboto', sans-serif; background-color: var(--background-color); color: var(--text-color); line-height: 1.6; overflow-x: hidden; } .page-container { display: flex; } .navbar { width: var(--navbar-width); height: 100vh; position: fixed; background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color)); padding: 3rem 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between; transition: transform 0.3s ease-in-out; z-index: 1000; } .navbar-logo { font-family: 'Exo 2', sans-serif; font-size: 1.8rem; font-weight: 700; text-align: center; margin-bottom: 3rem; } .navbar-links { list-style-type: none; width: 100%; } .navbar-links li { margin-bottom: 1.5rem; } .navbar-links a { font-family: 'Exo 2', sans-serif; color: var(--background-color); text-decoration: none; font-weight: 700; display: block; padding: 0.8rem 1.5rem; transition: background-color 0.3s ease; border-radius: 5px; } .navbar-links a:hover { background-color: rgba(255, 255, 255, 0.2); } .main-content { margin-left: var(--navbar-width); padding: 3rem; width: calc(100% - var(--navbar-width)); transition: margin-left 0.3s ease-in-out; } h1, h2, h3 { font-family: 'Orbitron', sans-serif; text-align: center; margin-bottom: 2.5rem; } p { margin-bottom: 1.5rem; } .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover; position: relative; overflow: hidden; margin-bottom: 5rem; padding: 3rem; } .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); } .hero-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; } .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; } .btn { display: inline-block; background-color: var(--primary-color); color: var(--background-color); padding: 1rem 2rem; border: none; border-radius: 30px; text-decoration: none; font-weight: 700; transition: background-color 0.3s ease, transform 0.3s ease; margin-top: 1.5rem; } .btn:hover { background-color: var(--secondary-color); transform: translateY(-3px); } .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 5rem; } .feature { background-color: rgba(255, 255, 255, 0.1); padding: 3rem; border-radius: 10px; text-align: center; transition: transform 0.3s ease; } .feature:hover { transform: translateY(-10px); } .feature img { width: 100px; height: 100px; margin-bottom: 2rem; } .cta-section { text-align: center; margin-top: 5rem; padding: 5rem 0; background-color: rgba(255, 255, 255, 0.05); } .menu-toggle { display: none; position: fixed; top: 1rem; right: 1rem; z-index: 1001; background: var(--primary-color); color: var(--background-color); border: none; padding: 0.5rem 1rem; font-size: 1.5rem; cursor: pointer; } @media screen and (max-width: 768px) { .page-container { flex-direction: column; } .navbar { transform: translateX(-100%); position: fixed; width: 100%; } .navbar.active { transform: translateX(0); } .main-content { margin-left: 0; width: 100%; padding: 1rem; } .menu-toggle { display: block; } .hero { padding: 2rem 1rem; } .hero h1 { font-size: 2.5rem; } .features { grid-template-columns: 1fr; } .feature { padding: 2rem 1rem; } .cta-section { padding: 3rem 1rem; } } </style> </head> <body> <div class="page-container"> <button class="menu-toggle">☰</button> <nav class="navbar"> <div class="navbar-logo">QuantumLeap AI</div> <ul class="navbar-links"> <li><a href="index.html">Home</a></li> <li><a href="products.html">Products</a></li> <li><a href="about.html">About</a></li> <li><a href="contact.html">Contact</a></li> </ul> </nav>
-text
-    <main class="main-content">
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome to the Future of AI</h1>
-                <p>Revolutionizing industries with quantum-powered artificial intelligence</p>
-                <a href="#" class="btn">Discover More</a>
-            </div>
-        </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeMasters Plumbing | Expert Plumbing Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #003366, #0066cc);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2.8em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .logo {
+            height: 120px;
+            width: auto;
+            margin-left: 20px;
+        }
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 10px 20px;
+        }
+        nav ul li a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 15px 10px;
+            display: inline-block;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #0066cc;
+            transform: translateY(-3px);
+        }
+        .hero {
+            background-image: url('images/1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 50px;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+        }
+        .hero-text {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            max-width: 600px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin: 0 20px;
+        }
+        .hero-text h2 {
+            color: #003366;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero-text p {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 25px;
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #ff8c00, #ff6600);
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(255,140,0,0.3);
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 70px 30px;
+            background-color: #ffffff;
+        }
+        .service-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 25px;
+            padding: 40px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 25px;
+        }
+        .service-card h3 {
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        .testimonials {
+            background: linear-gradient(135deg, #e6f3ff, #ffffff);
+            padding: 70px 30px;
+            text-align: center;
+        }
+        .testimonial-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin: 25px;
+            max-width: 400px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        .testimonial-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #0066cc;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #003366, #0066cc);
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 30px;
+            position: relative;
+        }
+        .cta-section::before,
+        .cta-section::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-section::before {
+            left: 50px;
+            background-image: url('images/6.jpg');
+        }
+        .cta-section::after {
+            right: 50px;
+            background-image: url('images/7.jpg');
+        }
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 30px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-section {
+            margin: 30px;
+            text-align: left;
+        }
+        .footer-section h3 {
+            color: #ff8c00;
+            margin-bottom: 20px;
+        }
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 15px;
+        }
+        .footer-section ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer-section ul li a:hover {
+            color: #ff8c00;
+        }
 
-        <section class="features">
-            <div class="feature">
-                <img src="https://via.placeholder.com/100" alt="Quantum AI Icon">
-                <h2>Quantum AI</h2>
-                <p>Harness the power of quantum computing for unprecedented AI capabilities. Our quantum algorithms process complex data at speeds unimaginable with classical computing.</p>
-            </div>
-            <div class="feature">
-                <img src="https://via.placeholder.com/100" alt="Machine Learning Icon">
-                <h2>Advanced ML</h2>
-                <p>State-of-the-art machine learning algorithms for complex problem-solving. Our neural networks adapt and learn from vast datasets, providing insights that drive innovation.</p>
-            </div>
-            <div class="feature">
-                <img src="https://via.placeholder.com/100" alt="Data Analysis Icon">
-                <h2>Data Insights</h2>
-                <p>Extract meaningful insights from vast amounts of data in real-time. Our AI-powered analytics tools help businesses make data-driven decisions with confidence.</p>
-            </div>
-        </section>
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .logo {
+                height: 80px;
+                margin-left: 0;
+                margin-top: 10px;
+            }
+            .hero {
+                height: 500px;
+            }
+            .hero-text {
+                padding: 30px;
+            }
+            .hero-text h2 {
+                font-size: 2em;
+            }
+            .service-card {
+                width: 100%;
+                max-width: 300px;
+            }
+            .cta-section::before,
+            .cta-section::after {
+                display: none;
+            }
+            .footer-section {
+                width: 100%;
+                text-align: center;
+            }
+        }
 
-        <section class="cta-section">
-            <h2>Ready to Transform Your Business?</h2>
-            <p>Experience the power of QuantumLeap AI and stay ahead of the competition.</p>
-            <a href="contact.html" class="btn">Get Started Today</a>
-        </section>
-    </main>
-</div>
-
-<script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navbar = document.querySelector('.navbar');
-    const mainContent = document.querySelector('.main-content');
-
-    menuToggle.addEventListener('click', () => {
-        navbar.classList.toggle('active');
-    });
-</script>
+        @media (max-width: 480px) {
+            .hero-text h2 {
+                font-size: 1.5em;
+            }
+            .hero-text p {
+                font-size: 1em;
+            }
+            .cta-button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>TradeMasters Plumbing</h1>
+            <img src="images/Logo1.png" alt="TradeMasters Plumbing Logo" class="logo">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <div class="hero-text">
+            <h2>Expert Plumbing Solutions for Every Need</h2>
+            <p>Your trusted partner for residential and commercial plumbing services. Available 24/7 for emergencies.</p>
+            <a href="contact.html" class="cta-button">Get a Free Quote</a>
+        </div>
+    </div>
+    <div class="services">
+        <div class="service-card">
+            <img src="images/2.jpg" alt="Residential Plumbing">
+            <h3>Residential Plumbing</h3>
+            <p>Comprehensive solutions for your home, from repairs to installations. We handle everything from leaky faucets to complete bathroom renovations.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/3.jpg" alt="Commercial Plumbing">
+            <h3>Commercial Plumbing</h3>
+            <p>Keeping businesses flowing smoothly with expert commercial services. We specialize in large-scale projects and ongoing maintenance contracts.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/4.jpg" alt="Emergency Services">
+            <h3>Emergency Services</h3>
+            <p>24/7 support for urgent plumbing issues, any time, any day. Our rapid response team is always ready to handle your plumbing emergencies.</p>
+        </div>
+    </div>
+    <div class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-card">
+            <img src="images/5.jpg" alt="Jane Doe">
+            <p>"TradeMasters saved the day when we had a major leak. Their team was professional, quick, and thorough. Highly recommended!"</p>
+            <h4>Jane Doe</h4>
+        </div>
+        <div class="testimonial-card">
+            <img src="images/6.jpg" alt="John Smith">
+            <p>"As a business owner, I appreciate TradeMasters' reliability and expertise. They've been maintaining our plumbing systems for years without a hitch."</p>
+            <h4>John Smith</h4>
+        </div>
+    </div>
+    <div class="cta-section">
+        <h2>Need a Plumber?</h2>
+        <p>We're available 24/7 for all your plumbing needs. Don't let plumbing issues disrupt your life or business.</p>
+        <a href="contact.html" class="cta-button">Contact Us Now</a>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 Plumber Street, Watertown, CA 90210</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@trademastersplumbing.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Facebook | Twitter | Instagram | LinkedIn</p>
+            </div>
+        </div>
+        <p>&copy; 2024 TradeMasters Plumbing. All rights reserved.</p>
+    </footer>
+</body>
+</html>
